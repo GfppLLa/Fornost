@@ -1,0 +1,6 @@
+#ignorar os json
+
+#ignorar o arquivos composer
+/vendor/
+#ingnorar as variaveis ambientais
+.env
