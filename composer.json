@@ -1,6 +1,16 @@
 {
-    "name": "gleisin/Fornost",
+    "name": "gleisin/fornost-api",
     "description": "API REST em php usando pdo para PACU",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+        "name": "Gleison de Paula",
+        "email": "contato@depaula.dev.br"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/GfppLLa/Fornost"
+    },
     "require":{
         "vlucas/phpdotenv": "^5.5"
     },
