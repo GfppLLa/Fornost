@@ -40,31 +40,6 @@ Se o make não estiver instalado, usar o script alternativo para instalar as dep
 sh instalacao.sh
 ```
 
-### Estrutura do Projeto
-
-<pre>
-Fornost/
-├── public/
-│   └── index.php            # Ponto de entrada da API
-│
-├── config/
-│   └── config.php           # Configurações e variáveis de ambiente
-│
-├── src/
-│   ├── Controllers/         # Controladores HTTP (UserController, etc.)
-│   ├── Models/              # Models de operações CRUD (UserCreate, UserRead, etc.)
-│   └── Database/            # Conexão PDO (Database.php)
-│
-├── bin/
-│   └── alternativo.sh       # Script alternativo de inicialização
-│
-├── .env                     # Variáveis de ambiente (não commitadas)
-├── Makefile                 # Makefile para facilitar a instalação e execução
-├── instalacao.sh            # Script de fallback para instalação e execução
-├── composer.json            # Arquivo de dependências e autoload
-└── vendor/                  # Diretório gerado pelo Composer
-<pre>
-
 
 ### Fluxo de Execução
 
@@ -93,3 +68,28 @@ DB_PASS=secret
 
 API_KEY=123456
 ```
+### Estrutura do Projeto
+
+<pre>
+Fornost/
+├── public/
+│   └── index.php            # Ponto de entrada da API
+│
+├── config/
+│   └── config.php           # Configurações e variáveis de ambiente
+│
+├── src/
+│   ├── Controllers/         # Controladores HTTP (UserController, etc.)
+│   ├── Models/              # Models de operações CRUD (UserCreate, UserRead, etc.)
+│   └── Database/            # Conexão PDO (Database.php)
+│
+├── bin/
+│   └── alternativo.sh       # Script alternativo de inicialização
+│
+├── .env                     # Variáveis de ambiente (não commitadas)
+├── Makefile                 # Makefile para facilitar a instalação e execução
+├── instalacao.sh            # Script de fallback para instalação e execução
+├── composer.json            # Arquivo de dependências e autoload
+└── vendor/                  # Diretório gerado pelo Composer
+<pre>
+</div>
