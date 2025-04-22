@@ -4,11 +4,11 @@
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 
-Fornost é uma API RESTful em PHP, utilizando PDO para interação com o banco de dados e oferecendo operações CRUD (Create, Read, Update, Delete) para gerenciar usuários. A autenticação é feita via API Key.
+Fornost, API para PoselTecno  a ser usada pela iniciativa PACU. Acesso a Banco de dados MYSQL usando api key para autenticação
 
 ---
 
-## 🔧 Requisitos
+## Requisitos
 
 - PHP 8.0 ou superior
 - Composer
