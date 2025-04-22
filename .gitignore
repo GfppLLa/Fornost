@@ -4,3 +4,5 @@
 /vendor/
 #ingnorar as variaveis ambientais
 .env
+
+.lock
