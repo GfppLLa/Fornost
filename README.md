@@ -42,7 +42,7 @@ sh instalacao.sh
 
 ### Estrutura do Projeto
 
-
+<pre>
 Fornost/
 ├── public/
 │   └── index.php            # Ponto de entrada da API
@@ -63,6 +63,8 @@ Fornost/
 ├── instalacao.sh            # Script de fallback para instalação e execução
 ├── composer.json            # Arquivo de dependências e autoload
 └── vendor/                  # Diretório gerado pelo Composer
+<pre>
+</div>
 
 ### Fluxo de Execução
 
