@@ -1,10 +1,4 @@
-#!/bin/bash
-# Este script verifica se o comando 'make' está instalado.
-# Se estiver, ele utiliza o Makefile para iniciar a aplicação.
-# Caso contrário, ele chama o script alternativo em 'bin/alternativo.sh' que
-# realiza a instalação do Composer (se necessário) e inicia o servidor PHP.
-#
-# Este script é compatível com ambientes Linux e Windows (usando Git Bash ou WSL).
+
 
 # Verifica se o comando 'make' está disponível no PATH.
 if command -v make >/dev/null 2>&1; then
