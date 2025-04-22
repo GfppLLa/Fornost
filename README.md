@@ -73,23 +73,23 @@ API_KEY=123456
 <pre>
 Fornost/
 ├── public/
-│   └── index.php            # Ponto de entrada da API
+│   └── index.php            
 │
 ├── config/
-│   └── config.php           # Configurações e variáveis de ambiente
+│   └── config.php          
 │
 ├── src/
-│   ├── Controllers/         # Controladores HTTP (UserController, etc.)
-│   ├── Models/              # Models de operações CRUD (UserCreate, UserRead, etc.)
-│   └── Database/            # Conexão PDO (Database.php)
+│   ├── Controllers/         
+│   ├── Models/              
+│   └── Database/            
 │
 ├── bin/
-│   └── alternativo.sh       # Script alternativo de inicialização
+│   └── alternativo.sh       
 │
-├── .env                     # Variáveis de ambiente (não commitadas)
-├── Makefile                 # Makefile para facilitar a instalação e execução
-├── instalacao.sh            # Script de fallback para instalação e execução
-├── composer.json            # Arquivo de dependências e autoload
-└── vendor/                  # Diretório gerado pelo Composer
+├── .env                     
+├── Makefile                 
+├── instalacao.sh            
+├── composer.json            
+└── vendor/                  
 <pre>
 </div>
