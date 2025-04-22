@@ -1,0 +1,41 @@
+public/index.php
+    │
+    ├─► require 'vendor/autoload.php'
+    │      (Composer autoloader registra PSR‑4)
+    │
+    ├─► require 'config/config.php'
+    │      └─► .env carrega variáveis de .env
+    │           └─► retorna array $config (db credentials, etc.)
+    │─► $expectedKey=@_ENV['API_KEY']
+    |─► lê $_SERVER['HTTP_X_API_KEY']
+    |─► compara as duas chaves
+    |       └─► se não foram iguais, json com 401  e exit
+    |
+    ├─► parse_url($_SERVER['REQUEST_URI'])
+    │
+    ├─► switch rota (ex: '/users')
+    │      └─► new App\Controllers\UserController()
+    │
+    └─► UserController->handle()
+            │
+            ├─► obtém método HTTP e parâmetros (query string, php://input)
+            │
+            ├─► escolhe classe de operação
+            │      ├─ GET    → new UserRead($config)
+            │      ├─ POST   → new UserCreate($config)   (ou UserBulkInsert)
+            │      ├─ PUT    → new UserUpdate($config)
+            │      └─ DELETE → new UserDelete($config)
+            │
+            └─► chama método CRUD (ex: getUserById, create, update, delete, bulkInsert)
+                    │
+                    ├─► BaseModel::__construct($config)
+                    │      └─► Database::getInstance($config['db'])
+                    │             └─► new PDO(DSN, user, pass)
+                    │
+                    ├─► prepara e executa query SQL via PDO
+                    │
+                    └─► retorna resultado ao Controller
+                                │
+                                └─► Controller faz echo json_encode($resultado)
+                                            │
+                                            └─► response JSON ao cliente
